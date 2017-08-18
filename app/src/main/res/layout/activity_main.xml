@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.zhenwei.androidtest.MainActivity">
+
+    <Button
+        android:id="@+id/linear_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:onClick="startLinearRecyclerActivity"
+        android:text="LinearLayoutManager"/>
+
+    <Button
+        android:id="@+id/linear_recycler_with_divider_line"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:onClick="startLinearRecyclerWithDividerActivity"
+        android:text="LinearLayoutManager带有分割线"/>
+
+    <Button
+        android:id="@+id/grid_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:onClick="startGridRecyclerActivity"
+        android:text="普通的GridLayoutManager"/>
+
+    <Button
+        android:id="@+id/grid_recycler_with_span"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:onClick="startGridRecyclerWithSpanActivity"
+        android:text="带有跨越多个列的GridLayoutManager"/>
+
+</LinearLayout>
